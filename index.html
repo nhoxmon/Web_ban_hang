@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thiết bị điện tử</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/page.css">
+
+</head>
+<body>
+
+  <!-- 🌌 Particle Background -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Header -->
+  <header class="neon-header">
+    <div class="logo">My site</div>
+    <nav>
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li class="dropdown">
+          <a href="#">Danh mục sản phẩm ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Điện thoại</a></li>
+            <li><a href="#">Máy tính</a></li>
+            <li><a href="#">Phụ kiện</a></li>
+          </ul>
+        </li>
+        <li><a href="cart.html">Giỏ hàng <span class="badge" id="cartCount">0</span></a></li>
+        <li><a href="#" onclick="openLoginModal()">Đăng nhập</a></li>
+      </ul>
+    </nav>
+    <div class="search-box">
+      <input type="text" placeholder="Tìm sản phẩm...">
+    </div>
+  </header>
+
+  <!-- 🚀 Hero Section -->
+  <section class="hero">
+    <h1>Khám phá công nghệ tương lai</h1>
+    <p>Thiết bị điện tử hiện đại, giao diện đột phá, trải nghiệm mua sắm mượt mà.</p>
+    <a href="products.html" class="cta-button">Xem sản phẩm</a>
+  </section>
+
+  <!-- 🌟 Sản phẩm nổi bật -->
+  <section class="featured-products">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/iphone.jpg" alt="iPhone 13">
+        <h3>iPhone 13</h3>
+        <p>Giá: 15.000.000₫</p>
+      </div>
+      <div class="product-card">
+        <img src="images/laptop.jpg" alt="Laptop Dell">
+        <h3>Laptop Dell</h3>
+        <p>Giá: 8.000.000₫</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔐 Modal Đăng nhập -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLoginModal()">&times;</span>
+      <h2>Đăng nhập</h2>
+      <input type="text" placeholder="Email">
+      <input type="password" placeholder="Mật khẩu">
+      <button>Đăng nhập</button>
+    </div>
+  </div>
+
+  <!-- 📞 Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Chính sách bảo mật</a>
+      <a href="#">Chính sách giao hàng</a>
+      <a href="#">Hướng dẫn mua hàng</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="img/icons8-facebook.svg" alt="Facebook">Facebook</a>
+      <a href="#"><img src="img/icons8-instagram.svg" alt="Instagram">Instagram</a>
+      <a href="#"><img src="img/icons8-zalo.svg" alt="Zalo">Zalo</a>
+    </div>
+  </footer>
+
+  <!-- 🔧 Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    function openLoginModal() {
+      document.getElementById("loginModal").style.display = "block";
+    }
+    function closeLoginModal() {
+      document.getElementById("loginModal").style.display = "none";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Sản phẩm</title>
+  <link rel="stylesheet" href="CSS/base.css">
+  <link rel="stylesheet" href="CSS/components.css">
+  <link rel="stylesheet" href="CSS/layout.css">
+  <link rel="stylesheet" href="CSS/page.css">
+</head>
+<body>
+  <section class="products">
+    <h2>Sản phẩm</h2>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Tìm kiếm sản phẩm...">
+      <select id="filter">
+        <option value="all">Tất cả</option>
+        <option value="Điện thoại">Điện thoại</option>
+        <option value="Máy tính">Máy tính</option>
+        <option value="Phụ kiện">Phụ kiện</option>
+      </select>
+      <select id="sort">
+        <option value="default">Sắp xếp</option>
+        <option value="asc">Giá tăng dần</option>
+        <option value="desc">Giá giảm dần</option>
+      </select>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <script type="module" src="JS/main.js"></script>
+</body>
+</html>
